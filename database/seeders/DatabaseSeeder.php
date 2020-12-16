@@ -3,7 +3,12 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\House;
 use Illuminate\Database\Seeder;
+use Database\Seeders\CitySeeder;
+use Database\Seeders\HouseSeeder;
+use Database\Seeders\StateSeeder;
+use Database\Seeders\CountrySeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -44,5 +49,18 @@ class DatabaseSeeder extends Seeder
 
 
         User::factory(15)->create();
+
+        // CitySeeder::class;
+        // CountrySeeder::class;
+        // StateSeeder::class;
+
+        $this->call([
+            CountrySeeder::class,
+            StateSeeder::class,
+            CitySeeder::class,
+
+        ]);
+
+        House::factory(15)->create();
     }
 }

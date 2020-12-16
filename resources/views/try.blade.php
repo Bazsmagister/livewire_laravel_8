@@ -428,9 +428,24 @@
                         <li>
                             <a href="/counter">Counter</a>
                         </li>
+
+
+                        <li>
+                            <a href="/houses/create">houses/create 3 level dependent dropdown using jquery</a>
+                        </li>
                     </ul>
                 </nav>
         </div>
+
+
+    </div>
+
+    <div>
+        <p>
+            3 level dependent dropdown using livewire component
+        </p>
+        @livewire('country-state-city')
+        {{-- <livewire:country-state-city> --}}
     </div>
 
     @livewireScripts

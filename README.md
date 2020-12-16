@@ -211,3 +211,19 @@ purge: [
     plugins: [require("@tailwindcss/ui")]
 
 };
+
+---
+
+livewire three dropdown:
+
+source is:
+
+https://www.youtube.com/?gl=HU&tab=w1
+
+LaravelDaily /
+Livewire-jQuery-Three-Dropdowns
+
+php artisan make:livewire CountryStateCity
+
+php artisan make:model City -a
+State, Country, (House also)
